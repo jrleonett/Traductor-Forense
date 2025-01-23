@@ -1,10 +1,28 @@
-# Whisper: Traducción y conversión de audios en español a texto
+# Whisper Forense: Transcripción de audios para análisis judicial
+![Licencia](https://img.shields.io/badge/Licencia-GNU%20GPL%20v3-blue)
+![GitHub](https://img.shields.io/badge/Python-3.8%2B-green)
+![GitHub](https://img.shields.io/badge/Estado-Activo-brightgreen)
 
-**Whisper** es una red neuronal desarrollada por OpenAI ([ver más](https://openai.com/blog/whisper/)) que convierte el habla en texto con una precisión cercana a la humana. Este proyecto utiliza Whisper para transcribir audios en español, incluso en situaciones con ruido de fondo, acentos o jerga. 
+Este repositorio contiene una implementación especializada del modelo **Whisper de OpenAI**, diseñada para la transcripción precisa de audios en español, con un enfoque en análisis forense y casos judiciales. El módulo está optimizado para manejar grabaciones desafiantes, como aquellas con ruido de fondo, acentos regionales o lenguaje coloquial. 
 
-Whisper es un sistema de reconocimiento de voz (ASR) entrenado con 680.000 horas de datos multilingües, lo que lo hace robusto y adaptable a diferentes contextos. Además de la transcripción, Whisper puede traducir audios a otros idiomas, como el inglés.
+Desarrollado por **José R. Leonett** para la comunidad de Peritos Forenses Digitales de Guatemala. Más información: www.forensedigital.gt
 
-Este proyecto ha sido adaptado y mejorado para su uso en casos forenses, donde la precisión y la detección de detalles son cruciales. Se han incorporado funcionalidades adicionales, como:
+![image](https://user-images.githubusercontent.com/41134438/192058743-526e2dcc-da77-4ec4-8259-26b222c0768a.png)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TJ4AQTrj1LK_8YhdEtRxbj1U0lH6GjeE?usp=sharing)
+
+---
+## **Características Principales:**
+- **Multilingüe:** Soporte para español y otros idiomas, con énfasis en transcripciones claras y precisas.
+- **Robustez:** Capacidad para procesar audios con ruido, distorsiones o baja calidad.
+- **Precisión:** Transcripciones de alta calidad, ideales para análisis técnicos y peritajes.
+- **Validación:** Siempre se recomienda contrastar las transcripciones con el audio original para garantizar su integridad.
+- **Transcripción de audio a texto**: Convierte archivos de audio (MP3, WAV, etc.) en texto en español.
+- **Detección de emociones**: Analiza el audio para detectar emociones como alegría, tristeza, neutral, etc.
+- **Detección de lenguaje violento**: Identifica palabras clave relacionadas con la violencia en el texto transcrito.
+- **Traducción a múltiples idiomas**: Permite traducir el texto transcrito a varios idiomas como inglés, portugués, francés, entre otros.
+- **Soporte para GPU**: Utiliza la GPU para acelerar el proceso de transcripción.
+
+Este proyecto ha sido adaptado y mejorado para su uso en casos forenses, donde es importante la precisión y la detección de detalles en los audios. Se han incorporado funcionalidades adicionales, como:
 
 - **Detección de emociones**: Identifica el estado emocional del hablante (alegría, tristeza, neutral, etc.).
 - **Detección de lenguaje violento**: Reconoce palabras o frases relacionadas con violencia en el texto transcrito.
@@ -12,18 +30,6 @@ Este proyecto ha sido adaptado y mejorado para su uso en casos forenses, donde l
 Estas mejoras lo convierten en una herramienta poderosa para la transcripción de audios en contextos judiciales y forenses.
 
 ---
-
-![image](https://user-images.githubusercontent.com/41134438/192058743-526e2dcc-da77-4ec4-8259-26b222c0768a.png)
----
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TJ4AQTrj1LK_8YhdEtRxbj1U0lH6GjeE?usp=sharing)
-
-## Características Principales
-- **Transcripción de audio a texto**: Convierte archivos de audio (MP3, WAV, etc.) en texto en español.
-- **Detección de emociones**: Analiza el audio para detectar emociones como alegría, tristeza, neutral, etc.
-- **Detección de lenguaje violento**: Identifica palabras clave relacionadas con la violencia en el texto transcrito.
-- **Traducción a múltiples idiomas**: Permite traducir el texto transcrito a varios idiomas como inglés, portugués, francés, entre otros.
-- **Soporte para GPU**: Utiliza la GPU para acelerar el proceso de transcripción.
-
 ## Requisitos
 - Python 3.7 o superior.
 - CUDA (opcional, para usar GPU).
@@ -97,5 +103,5 @@ Usa la siguiente entrada BibTeX si utilizas este trabajo en tu investigación:
 ```
 
 **Licencia.**
-- Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+- Este proyecto está bajo la licencia GNU General Public License v3.0. Consulta el archivo LICENSE para más detalles.
 
