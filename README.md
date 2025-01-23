@@ -3,49 +3,49 @@
 ![GitHub](https://img.shields.io/badge/Python-3.8%2B-green)
 ![GitHub](https://img.shields.io/badge/Estado-Activo-brightgreen)
 
-Este repositorio contiene una implementación especializada del modelo **Whisper de OpenAI**, diseñada para la transcripción precisa de audios en español, con un enfoque en análisis forense y casos judiciales. El módulo está optimizado para manejar grabaciones desafiantes, como aquellas con ruido de fondo, acentos regionales o lenguaje coloquial. 
-
-Desarrollado por **José R. Leonett** para la comunidad de Peritos Forenses Digitales de Guatemala. Más información: www.forensedigital.gt
+Este repositorio contiene una implementación especializada del modelo **Whisper de OpenAI**, diseñada para la transcripción precisa de audios en español, con un enfoque en **análisis forense y casos judiciales**. El módulo está optimizado para manejar grabaciones desafiantes, como aquellas con ruido de fondo, acentos regionales o lenguaje coloquial, y ha sido adaptado para incluir funcionalidades avanzadas que lo convierten en una herramienta indispensable para peritos forenses. Desarrollado por **José R. Leonett** para la comunidad de Peritos Forenses Digitales de Guatemala. Más información: www.forensedigital.gt
 
 ![Whisper Forense](https://github.com/jrleonett/Traductor-Forense/blob/main/wisperforense.png)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TJ4AQTrj1LK_8YhdEtRxbj1U0lH6GjeE?usp=sharing)
 
 ---
-## **Características Principales:**
-- **Multilingüe:** Soporte para español y otros idiomas, con énfasis en transcripciones claras y precisas.
-- **Robustez:** Capacidad para procesar audios con ruido, distorsiones o baja calidad.
-- **Precisión:** Transcripciones de alta calidad, ideales para análisis técnicos y peritajes.
-- **Validación:** Siempre se recomienda contrastar las transcripciones con el audio original para garantizar su integridad.
-- **Transcripción de audio a texto**: Convierte archivos de audio (MP3, WAV, etc.) en texto en español.
-- **Detección de emociones**: Analiza el audio para detectar emociones como alegría, tristeza, neutral, etc.
+
+## Características Principales
+
+- **Multilingüe**: Soporte para español y otros idiomas, con énfasis en transcripciones claras y precisas.
+- **Robustez**: Capacidad para procesar audios con ruido, distorsiones o baja calidad.
+- **Precisión**: Transcripciones de alta calidad, ideales para análisis técnicos y peritajes.
+- **Validación**: Siempre se recomienda contrastar las transcripciones con el audio original para garantizar su integridad.
+- **Detección de emociones**: Analiza el audio para identificar el estado emocional del hablante (alegría, tristeza, neutral, etc.).
 - **Detección de lenguaje violento**: Identifica palabras clave relacionadas con la violencia en el texto transcrito.
 - **Traducción a múltiples idiomas**: Permite traducir el texto transcrito a varios idiomas como inglés, portugués, francés, entre otros.
 - **Soporte para GPU**: Utiliza la GPU para acelerar el proceso de transcripción.
 
-Este proyecto ha sido adaptado y mejorado para su uso en casos forenses, donde es importante la precisión y la detección de detalles en los audios. Se han incorporado funcionalidades adicionales, como:
+---
 
-- **Detección de emociones**: Identifica el estado emocional del hablante (alegría, tristeza, neutral, etc.).
-- **Detección de lenguaje violento**: Reconoce palabras o frases relacionadas con violencia en el texto transcrito.
+## Beneficios Forenses
 
-Estas mejoras lo convierten en una herramienta poderosa para la transcripción de audios en contextos judiciales y forenses.
+Este proyecto ha sido adaptado y mejorado específicamente para su uso en **casos forenses**, donde la precisión y la detección de detalles en los audios son fundamentales. Algunos de los beneficios clave incluyen:
+
+1. **Análisis detallado**: Permite la transcripción y el análisis de audios en contextos judiciales, identificando emociones y lenguaje violento.
+2. **Herramienta confiable**: Diseñada para cumplir con los estándares forenses, garantizando la integridad y precisión de los resultados.
+3. **Facilidad de uso**: Integra funcionalidades avanzadas en una interfaz sencilla, ideal para peritos forenses y profesionales del ámbito legal.
 
 ---
-## Requisitos
-- Python 3.7 o superior.
-- CUDA (opcional, para usar GPU).
-- Librerías de Python: `whisper`, `librosa`, `noisereduce`, `googletrans`, `pyannote.audio`, `torch`, `transformers`.
 
-## Instala las dependencias necesarias:
+## Requisitos
+
+- **Python 3.7 o superior**.
+- **CUDA** (opcional, para usar GPU).
+- **Librerías de Python**: `whisper`, `librosa`, `noisereduce`, `googletrans`, `pyannote.audio`, `torch`, `transformers`.
+
+### Instalación
+
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tuusuario/traductor-whisper.git
-   cd traductor-whisper
+   git clone https://github.com/jrleonett/Traductor-Forense.git
+   cd Traductor-Forense
 
-2. Instala Whisper:
-   ```bash
-   pip install git+https://github.com/openai/whisper.git
-
-3. Asegúrate de tener una GPU compatible con CUDA si deseas acelerar el proceso de transcripción.
 ---
 ## **Uso**
 
