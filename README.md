@@ -7,7 +7,7 @@ Este repositorio contiene una implementación especializada del modelo **Whisper
 
 Desarrollado por **José R. Leonett** para la comunidad de Peritos Forenses Digitales de Guatemala. Más información: www.forensedigital.gt
 
-![image](https://user-images.githubusercontent.com/41134438/192058743-526e2dcc-da77-4ec4-8259-26b222c0768a.png)
+![Whisper Forense](https://github.com/jrleonett/Traductor-Forense/blob/main/wisperforense.png)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TJ4AQTrj1LK_8YhdEtRxbj1U0lH6GjeE?usp=sharing)
 
 ---
@@ -95,10 +95,11 @@ print(resultado['text'])
 # Cómo citar este trabajo.
 Usa la siguiente entrada BibTeX si utilizas este trabajo en tu investigación:
 ```bash
-@article{joséRLeonett,
-  title={Whispers, traductor y convertidor de audios en español a escritura},
+@article{joseRLeonett,
+  title={Whisper Forense: Herramienta de Transcripción y Análisis de Audios para Casos Judiciales},
   author={José R. Leonett},
-  year={2023}
+  year={2023},
+  url={https://github.com/jrleonett/Traductor-Forense}
 }
 ```
 
